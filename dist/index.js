@@ -4532,19 +4532,19 @@ return /******/ (function(modules) { // webpackBootstrap
 	                return _react2.default.createElement(
 	                    'span',
 	                    { className: _Overlay2.default.inner },
-	                    _react2.default.createElement(_report2.default, iconProps)
+	                    _react2.default.createElement('img', { src: '/images/loader.gif' })
 	                );
 	            } else if (loading) {
 	                return _react2.default.createElement(
 	                    'span',
 	                    { className: _Overlay2.default.inner },
-	                    _react2.default.createElement(_spin2.default, iconProps)
+	                    _react2.default.createElement('img', { src: '/images/loader.gif' })
 	                );
 	            } else if (paused) {
 	                return _react2.default.createElement(
 	                    'span',
 	                    { className: _Overlay2.default.inner },
-	                    _react2.default.createElement(_play_arrow2.default, iconProps)
+	                    _react2.default.createElement('img', { src: '/images/loader.gif' })
 	                );
 	            }
 	        }

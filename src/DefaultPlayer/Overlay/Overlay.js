@@ -20,13 +20,13 @@ export default class Overlay extends Component {
         if (error) {
             return (
                 <span className={styles.inner}>
-                    <Report {...iconProps} />
+                  <img src="/images/loader.gif"/>
                 </span>
             );
         } else if (loading) {
             return (
                 <span className={styles.inner}>
-                    <Spin {...iconProps} />
+                  <img src="/images/loader.gif"/>
                 </span>
             );
         } else if (paused) {
