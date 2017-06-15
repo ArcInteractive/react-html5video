@@ -32,7 +32,7 @@ export default class Overlay extends Component {
         } else if (paused) {
             return (
                 <span className={styles.inner}>
-                    <PlayArrow {...iconProps} />
+                  <img src="/images/loader.gif"/>
                 </span>
             );
         }
