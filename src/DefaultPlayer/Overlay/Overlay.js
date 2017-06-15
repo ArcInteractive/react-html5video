@@ -20,19 +20,17 @@ export default class Overlay extends Component {
         if (error) {
             return (
                 <span className={styles.inner}>
-                  <img src="/images/loader.gif"/>
+                    <Report {...iconProps} />
                 </span>
             );
         } else if (loading) {
             return (
-                <span className={styles.inner}>
-                  <img src="/images/loader.gif"/>
+                <span className={styles.inner + " video-loading"}>
                 </span>
             );
         } else if (paused) {
             return (
-                <span className={styles.inner}>
-                  <img src="/images/loader.gif"/>
+                <span className={styles.inner + " video-paused"}>
                 </span>
             );
         }

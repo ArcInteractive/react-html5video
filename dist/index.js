@@ -4532,20 +4532,12 @@ return /******/ (function(modules) { // webpackBootstrap
 	                return _react2.default.createElement(
 	                    'span',
 	                    { className: _Overlay2.default.inner },
-	                    _react2.default.createElement('img', { src: '/images/loader.gif' })
+	                    _react2.default.createElement(_report2.default, iconProps)
 	                );
 	            } else if (loading) {
-	                return _react2.default.createElement(
-	                    'span',
-	                    { className: _Overlay2.default.inner },
-	                    _react2.default.createElement('img', { src: '/images/loader.gif' })
-	                );
+	                return _react2.default.createElement('span', { className: _Overlay2.default.inner + " video-loading" });
 	            } else if (paused) {
-	                return _react2.default.createElement(
-	                    'span',
-	                    { className: _Overlay2.default.inner },
-	                    _react2.default.createElement('img', { src: '/images/loader.gif' })
-	                );
+	                return _react2.default.createElement('span', { className: _Overlay2.default.inner + " video-paused" });
 	            }
 	        }
 	    }, {
